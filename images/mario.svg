@@ -1,0 +1,30 @@
+<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+  <!-- Mario's hat -->
+  <rect x="10" y="5" width="30" height="10" fill="red"/>
+  <rect x="5" y="10" width="40" height="5" fill="red"/>
+  
+  <!-- Mario's face -->
+  <rect x="15" y="15" width="20" height="15" fill="#FFC966"/>
+  
+  <!-- Mario's eyes -->
+  <rect x="20" y="18" width="5" height="5" fill="black"/>
+  
+  <!-- Mario's mustache -->
+  <rect x="15" y="25" width="20" height="3" fill="black"/>
+  
+  <!-- Mario's shirt -->
+  <rect x="15" y="30" width="20" height="10" fill="red"/>
+  
+  <!-- Mario's overalls -->
+  <rect x="10" y="35" width="30" height="10" fill="blue"/>
+  <rect x="10" y="30" width="5" height="5" fill="blue"/>
+  <rect x="35" y="30" width="5" height="5" fill="blue"/>
+  
+  <!-- Mario's arms -->
+  <rect x="5" y="30" width="5" height="10" fill="#FFC966"/>
+  <rect x="40" y="30" width="5" height="10" fill="#FFC966"/>
+  
+  <!-- Mario's legs -->
+  <rect x="15" y="45" width="5" height="5" fill="brown"/>
+  <rect x="30" y="45" width="5" height="5" fill="brown"/>
+</svg>
