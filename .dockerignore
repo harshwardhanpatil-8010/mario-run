@@ -1,35 +1,6 @@
-# Ignore version control files
 .git
 .gitignore
-
-# Ignore Docker-related files to prevent them from being copied into the image
 Dockerfile
 .dockerignore
-
-# Ignore Node.js dependencies and logs (good practice for any web project)
-node_modules
-npm-debug.log
-yarn-error.log
-
-# Ignore environment variable files
-.env
-.env.*
-!.env.example
-
-# Ignore build artifacts and output directories
-build/
-dist/
-
-# Ignore logs, test reports, and coverage
-logs/
-*.log
-coverage/
-
-# Ignore IDE and editor-specific files
-.vscode/
-.idea/
-*.suo
-
-# Ignore common OS-generated files
-.DS_Store
-Thumbs.db
+docker-compose.yml
+README.md
