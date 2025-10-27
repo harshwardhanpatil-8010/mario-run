@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  flappy-game:
+    build: .
+    container_name: flappy-game-container
+    ports:
+      - "8080:80"
