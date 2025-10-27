@@ -1,17 +1,14 @@
-# Use a lightweight and secure base image for serving static content
-# nginx:stable-alpine is a minimal image, reducing the attack surface.
-FROM nginx:stable-alpine
+FROM nginx:alpine
 
-# Set the working directory to the default NGINX web root directory
+# Set the working directory
 WORKDIR /usr/share/nginx/html
 
-# Copy all the static application files (HTML, CSS, JS, images) into the container.
-# The .dockerignore file will prevent unnecessary files from being included.
+# Copy all static assets from the repository
+# This assumes an index.html, game.js, and an images/ directory exist
 COPY . .
 
-# Inform Docker that the container listens on port 80 at runtime
+# Expose port 80 for the web server
 EXPOSE 80
 
-# The base image already has a CMD to start the NGINX server,
-# so no explicit CMD is needed here.
-# CMD ["nginx", "-g", "daemon off;"]
+# The default Nginx command will start the server
+CMD ["nginx", "-g", "daemon off;"]
