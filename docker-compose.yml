@@ -1,8 +1,8 @@
 version: '3.8'
-
 services:
-  flappy-game:
+  mario-game:
     build: .
-    container_name: flappy-game-container
+    image: mario-game:latest
     ports:
       - "8080:80"
+    restart: unless-stopped
