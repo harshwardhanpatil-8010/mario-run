@@ -1,14 +1,14 @@
+# Use a lightweight web server
 FROM nginx:alpine
 
-# Set the working directory
+# Set the working directory to the Nginx HTML folder
 WORKDIR /usr/share/nginx/html
 
-# Copy all static assets from the repository
-# This assumes an index.html, game.js, and an images/ directory exist
+# Copy all the static application files into the container
 COPY . .
 
-# Expose port 80 for the web server
+# Expose port 80 to the outside world
 EXPOSE 80
 
-# The default Nginx command will start the server
+# The default nginx command will start the server
 CMD ["nginx", "-g", "daemon off;"]
