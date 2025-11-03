@@ -1,8 +1,13 @@
 version: '3.8'
+
 services:
   mario-game:
+    # Build the Docker image from the Dockerfile in the current directory
     build: .
-    image: mario-game:latest
+    # Name the container for easier management
+    container_name: mario-game-static
+    # Map port 8080 on the host to port 80 in the container
     ports:
       - "8080:80"
+    # Ensure the container restarts automatically if it stops
     restart: unless-stopped

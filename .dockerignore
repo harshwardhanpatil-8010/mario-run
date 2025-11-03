@@ -1,6 +1,9 @@
-# Ignore files and directories not needed in the final image
+# Ignore git and docker files
 .git
 .gitignore
 Dockerfile
 docker-compose.yml
-README.md
+.dockerignore
+
+# Ignore markdown files
+*.md
